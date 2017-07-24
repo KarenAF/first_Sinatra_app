@@ -9,5 +9,6 @@ get '/giraffe' do
 end
 
 get '/jungle' do
+  @message = params[:message]
   erb :separate_file
 end
