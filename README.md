@@ -1,4 +1,5 @@
 # <a href="https://github.com/KarenAF/first_Sinatra_app">Sinatra and ngrok Tutorial</a>* #
+(https://github.com/KarenAF/first_Sinatra_app)
 
 * Sinatra is a lightweight ruby framework. The routes and html are contained in one page.
 * ngrok is a webservice that you use to demo your app without deploying it.
@@ -32,12 +33,12 @@
       <td><b>Terminal:</b> <br><code>mkdir my_app_name</code><br>e.g.<br><code>mkdir sinatra</code><br> because I'm calling my app "sinatra."</td>
     </tr>
     <tr>
-      <td>3. Create a ruby file in your app folder. </td>
+      <td>3. Create a <a href="https://github.com/KarenAF/first_Sinatra_app/blob/master/ruby.rb"> ruby file </a> in your app folder. </td>
       <td><b>Terminal:</b> <br> <code>touch filename.rb</code><br>e.g.<br><code>touch ruby.rb</code><br>because I'm calling my file "ruby."</td>
     </tr>
     <tr>
       <td>4. Open the ruby file in your editor (e.g. Sublime, Atom, Vim, etc.). Require Sinatra at the top of the file. </td>
-      <td><b>Editor:</b> <br><code> require 'sinatra' </code><br> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501429332/minicapstone/001_require.png"><br>This is the central command station of your app. It contains all of your app's routes and html. (unlike in Rails, where your routes and html are in separate folders/files) </td>
+      <td><b>Editor:</b> <br><code> require 'sinatra' </code><br> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501429332/minicapstone/001_require.png"><br>This is the central command station of your app. It contains all of your app's routes and html. (unlike in Rails, where your routes and html are in separate folders/files)<br><br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501452661/01_02_folders.png"> </td>
     </tr>
     <tr>
       <td>5. Write the action (http request) and define it</td>
@@ -74,7 +75,7 @@ end
 <table>
   <tbody>
     <tr>
-      <td>1. Create a folder called views in your app's root folder, then create a .erb file in the views folder. </td>
+      <td>1. Create a folder called <a href="https://github.com/KarenAF/first_Sinatra_app/tree/master/views"> views </a> in your app's root folder, then create a .erb file in the views folder. </td>
       <td width=65%><b>Editor:</b><br>Sinatra>views>separate_file.erb <b><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367498/minicapstone/06_views_folder.png"> </td>
     </tr>
     <tr>
