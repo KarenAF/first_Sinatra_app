@@ -58,8 +58,8 @@ end
       </td>
     </tr>
     <tr>
-      <td>7. Go to local host:4567 in the browser (or whichever port the server told you to use.) </td>
-      <td><b>Browser:</b> <br> local host:4567/url <br><br> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501367498/minicapstone/03_local_host.png"> </td>
+      <td>7. Go to localhost:4567 in the browser (or whichever port the server told you to use.) </td>
+      <td><b>Browser:</b> <br> localhost:4567/url <br><br> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501367498/minicapstone/03_local_host.png"> </td>
     </tr>
     <tr>
       <td>8. That's it! Your app is now ready to go. Remember that after making <i>any</i> change or addition to the code, you must restart the server. (unlike in Rails, where you don't have to restart the server to see changes) </td>
