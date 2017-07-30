@@ -6,7 +6,7 @@
 ##### This tutorial contains four topics:
  
 1. <b>How to create a Sinatra app
-2. How to use separate html files
+2. How to connect a separate html file
 3. How to demo your app using ngrok
 4. How to incorporate interactive params in your Sinatra app</b>
 
