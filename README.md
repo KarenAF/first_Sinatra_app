@@ -10,7 +10,7 @@
 3. How to demo your app using ngrok
 4. How to incorporate interactive params in your Sinatra app</b>
 
-**for Macbooks. Some instructions may not work for PC.*
+**for Macs. Some instructions may not work for PC.*
 
 ##
 
