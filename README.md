@@ -69,4 +69,21 @@ end
 </table>
 
 
+### How to connect a separate HTML file:
 
+<table>
+  <tbody>
+    <tr>
+      <td>Create a folder called views in your app's root folder, then create a .erb file in the views folder. </td>
+      <td width=65%><b>Editor:</b><br>Sinatra>views>separate_file.erb <b><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367498/minicapstone/06_views_folder.png"> </td>
+    </tr>
+    <tr>
+      <td>Connect the html file in your root app file. Write the html contents of the webpage into the erb file. </td>
+      <td><b>Editor:</b><br> <i>in ruby.rb:</i><br><code>erb :separate_file</code><br><Br><i>in separate_file.erb:</i></br><code>In the jungle</code><br><br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367499/minicapstone/07_separate_file_sublime.png"> </td>
+    </tr>
+    <tr>
+      <td>Restart your server, then go to the browser and type the url of your new route to make sure it is working.</td>
+      <td><b>Browser:</b><br>localhost:4567/jungle<br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367499/minicapstone/08_browser.png"> </td>
+    </tr>
+  </tbody>
+</table>
