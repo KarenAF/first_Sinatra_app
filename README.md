@@ -62,7 +62,7 @@ end
       <td><b>Browser:</b> <br> localhost:4567/url <br><br> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501367498/minicapstone/03_local_host.png"> </td>
     </tr>
     <tr>
-      <td>8. That's it! Your app is now ready to go. Remember that after making <i>any</i> change or addition to the code, you must restart the server. (unlike in Rails, where you don't have to restart the server to see changes) </td>
+      <td>8. That's it! Your app is now ready to go. Note that after making <i>any</i> change or addition to the code, you must restart the server. (unlike in Rails, where you don't have to restart the server to see changes) </td>
       <td><b>Editor:</b><br>Make a change to your code <br> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501367498/minicapstone/04_routes.png"> <br><b>Terminal:</b> <br> ctrl + c (to stop server) <br><br> <b>Terminal:</b> <br> <code>ruby ruby.rb </code>(to start server)<br><br> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501367498/minicapstone/05_restart_server.png">  </td>
     </tr>
   </tbody>
