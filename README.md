@@ -20,8 +20,8 @@
 <table>
   <tbody>
     <tr>
-      <td>Step</td>
-      <td>Explanation/Code/Screenshot</td>
+      <td><b>Step</b></td>
+      <td><B>Explanation/Code/Screenshot</b></td>
     </tr>
     <tr>
       <td>1. Install sinatra on your computer. </td>
