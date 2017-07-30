@@ -25,7 +25,7 @@
     </tr>
     <tr>
       <td>1. Install sinatra on your computer. </td>
-      <td width=65%>Terminal: <code> gem install sinatra</code></td>
+      <td width=65%>Terminal: <br><code> gem install sinatra</code></td>
     </tr>
     <tr>
       <td>2. Create a folder to contain your Sinatra app. Name it whatever you want. </td>
