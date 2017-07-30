@@ -15,7 +15,7 @@
 ##
 
 
-### How to create a Sinatra app:
+### 1. How to create a Sinatra app:
 
 <table>
   <tbody>
@@ -69,21 +69,89 @@ end
 </table>
 
 
-### How to connect a separate HTML file:
+### 2. How to connect a separate HTML file:
 
 <table>
   <tbody>
     <tr>
-      <td>Create a folder called views in your app's root folder, then create a .erb file in the views folder. </td>
+      <td>1. Create a folder called views in your app's root folder, then create a .erb file in the views folder. </td>
       <td width=65%><b>Editor:</b><br>Sinatra>views>separate_file.erb <b><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367498/minicapstone/06_views_folder.png"> </td>
     </tr>
     <tr>
-      <td>Connect the html file in your root app file. Write the html contents of the webpage into the erb file. </td>
+      <td>2. Connect the html file in your root app file. Write the html contents of the webpage into the erb file. </td>
       <td><b>Editor:</b><br> <i>in ruby.rb:</i><br><code>erb :separate_file</code><br><Br><i>in separate_file.erb:</i></br><code>In the jungle</code><br><br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367499/minicapstone/07_separate_file_sublime.png"> </td>
     </tr>
     <tr>
-      <td>Restart your server, then go to the browser and type the url of your new route to make sure it is working.</td>
+      <td>3. Restart your server, then go to the browser and type the url of your new route to make sure it is working.</td>
       <td><b>Browser:</b><br>localhost:4567/jungle<br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367499/minicapstone/08_browser.png"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+### 3. How to demo your app using ngrok:
+
+<table>
+  <tbody>
+    <tr>
+      <td>1. Download and install ngrok</td>
+      <td>Follow the instructions for download at <a href="https://ngrok.com/download">https://ngrok.com/download</a>. Then do the following:
+<br><br><b>Terminal:</b><br>In a separate terminal tab,<br>
+<code> cd /usr/local/bin</code><br><code>ln -s /Applications/ngrok ngrok</code>
+</td>
+    </tr>
+    <tr>
+      <td>2. Start your Sinatra app</td>
+      <td><b>Terminal:</b><br>cd(change directory) into your Sinatra app. Restart Sinatra server. </td>
+    </tr>
+    <tr>
+      <td>3. Start ngrok</td>
+      <td><b>Terminal:</b><br>Type "ngrok http" + whatever port your sinatra server is on.<br><code>ngrok http 4567</code><br><br>You will see the following info blob pop up in your terminal:<br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367500/minicapstone/09_ngrok.png"><br>Notice the ngrok forwarding address. </td>
+    </tr>
+    <tr>
+      <td>4. Your users will use the ngrok forwarding address</td>
+      <td>This is the ngrok forwarding address from the above blob: <br><span style="background-color: #FFFF00">Forwarding <b>http://6852f32e.ngrok.io </b> -> localhost:4567 </span> <br>The part in bold is the important part. That is what we will give to the user.
+<br>As such,<br>
+User types any of the following in their <b>browser</b>:
+<br><b>http://6852f32e.ngrok.io</b>/jungle
+<br><b>http://6852f32e.ngrok.io</b>/hippo
+<br><b>http://6852f32e.ngrok.io</b>/giraffe
+<br>
+<br>User's browser will look like:<br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367499/minicapstone/10_users_browser.png"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+
+### How to incorporate interactive params in your Sinatra app:
+
+<table>
+  <tbody>
+    <tr>
+      <td>1. Add params to route action</td>
+      <td>Set a global variable equal to params[:input].<br><br><b>Editor:</b><br><i>in the root file:</i><br><code>@message = params[:message]
+</code><br><br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501449663/10_2_params.png"><br>Note: @message and :message can be called different things. The user will be typing ?message="blabla" in their browser address bar, and that is associated with :message. @message is the name of the variable you're setting equal to the user's param :message of "blabla". You will see this demonstrated below, in step 4. </td>
+    </tr>
+    <tr>
+      <td>2. Write the params variable in the html, wherever your html for the webpage is.</td>
+      <td>If your html is in a separate html file, then put the variable name (e.g. @message) in erb tags (embedded ruby tags): <%= %> <br><br>Editor:</b><br><code><%=@message%></code><br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501450013/10_3_erb_params.png"> </td>
+    </tr>
+    <tr>
+      <td>3. Restart Sinatra server.<br><br> Restart ngrok server.<br></td>
+      <td>ngrok will give you a new forwarding address to use. Your old one is now obsolete.<br><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367500/minicapstone/11_ngrok_new_server.png"><br>New ngrok forwarding address is <b>8ca28b37.ngrok.io</b> </td>
+    </tr>
+    <tr>
+      <td>4. User uses your app</td>
+      <td> User types in the forwarding address + url + their input<br><br><b>user's browser:</b><br>8ca28b37.ngrok.io/jungle<span style="background-color: #FFFF00">?message=the_mighty_jungle</span>
+<br>8ca28b37.ngrok.io/jungle<span style="background-color: #FFFF00">?message=blablabla</span>
+<br>8ca28b37.ngrok.io/jungle<span style="background-color: #FFFF00">?message=the lion sleeps</span><br></td>
+    </tr>
+    <tr>
+      <td>5. User's input will show up on page</td>
+      <td><img src="http://res.cloudinary.com/karenaf/image/upload/v1501367500/minicapstone/12_user_params_browser.png"> </td>
     </tr>
   </tbody>
 </table>
