@@ -37,7 +37,7 @@
     </tr>
     <tr>
       <td>4. Open the ruby file in your editor (e.g. Sublime, Atom, Vim, etc.). Require Sinatra at the top of the file. </td>
-      <td>Editor: <br><code> require 'sinatra' </code> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501429332/minicapstone/001_require.png"><br>This is the central command station of your app. It contains all of your app's routes and html. (unlike in Rails, where your routes and html are in separate folders/files) </td>
+      <td>Editor: <br><code> require 'sinatra' </code><br> <img src="http://res.cloudinary.com/karenaf/image/upload/v1501429332/minicapstone/001_require.png"><br>This is the central command station of your app. It contains all of your app's routes and html. (unlike in Rails, where your routes and html are in separate folders/files) </td>
     </tr>
     <tr>
       <td>5. Write the action (http request) and define it</td>
