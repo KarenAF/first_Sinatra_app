@@ -5,11 +5,14 @@
 * ngrok is a webservice that you use to demo your app without deploying it.
 
 ##### This tutorial contains four topics:
+ <b>
  
-1. <b>How to create a Sinatra app
+1. How to create a Sinatra app
 2. How to connect a separate html file
 3. How to demo your app using ngrok
-4. How to incorporate interactive params in your Sinatra app</b>
+4. How to incorporate interactive params in your Sinatra app
+
+</b>
 
 **for Macs. Some instructions may not work for PC.*
 
