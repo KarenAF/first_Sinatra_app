@@ -131,7 +131,7 @@ User types any of the following in their <b>browser</b>:
 <br>
 <br>
 
-### How to incorporate interactive params in your Sinatra app:
+### 4. How to incorporate interactive params in your Sinatra app:
 
 <table>
   <tbody>
